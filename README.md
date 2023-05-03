@@ -12,3 +12,7 @@ python3 wifi_pass_cracker.py
 then follow the instructions of the script (remember to put the .pcap file and the wordlist.txt file in the same directory of this script)
 
 passwords will stored in a new file in the directory "risultati.txt"
+
+### Disclaimer
+
+Please note that this payload is for educational purposes only and should not be used for illegal activities.
