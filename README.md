@@ -1,4 +1,4 @@
-# wifi-password-grabber
+# (flipperzero)-wifi-password-grabber
 
 To extract passwords you need from un-analyzed .pcap files, you need to follow these steps:
 ```
