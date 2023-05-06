@@ -1,20 +1,19 @@
 import pyshark
 import subprocess
 
-# Seleziona il file .pcap di input
+# Select the path (or better, the name in you are in the same directory of this script) of the .pcap file.
 input_file = input("Inserisci il nome del file .pcap di input: ")
 
-# Crea un nuovo file .pcap contenente solo i pacchetti EAPOL
+# Create a nu .pcap that only contains EAPOL packets.
 output_file = "eapol.pcap"
 capture = pyshark.FileCapture(input_file, display_filter="eapol", output_file=output_file)
 
-# Converte il file .pcap in .hccapx
+# Convert the new .pcap in .hccapx
 hccapx_file = "eapol.hccapx"
 subprocess.run(["hcxpcaptool", "-o", hccapx_file, output_file])
 
-# Importa il file .hccapx in hashcat e salva i risultati su un file "risultati.txt"
+# Importa the .hccapx file into hashcat and store the results in a file "risultati.txt" in the same directory of this script.
 results_file = "risultati.txt"
 subprocess.run(["hashcat", "-m", "2500", hccapx_file, "wordlist.txt", "-o", results_file])
 
-# Stampa un messaggio di conferma
 print("I risultati sono stati scritti su " + results_file)
