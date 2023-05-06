@@ -6,7 +6,7 @@ To extract passwords you need from un-analyzed .pcap files, you need to follow t
 hcxpcaptool    
 tshark     
 
-[tshark is used running the `tahark_alternative.pt` if `hcxpcaptools` is resulting some kind of `ERROR`, cause `hcxpcaptool` may not working properly, cause has a little problem of mismatch between the release and the OS where it is installed]
+[tshark is used running the `tahark_alternative.py` if `hcxpcaptools` is resulting some kind of `ERROR`, cause `hcxpcaptool` may not working properly, cause has a little problem of mismatch between the release and the OS where it is installed]
 
 ```
 pip install -r requirements.txt
