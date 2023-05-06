@@ -2,7 +2,7 @@ import pyshark
 import subprocess
 
 # Select the path (or better, the name in you are in the same directory of this script) of the .pcap file.
-input_file = input("Inserisci il nome del file .pcap di input: ")
+input_file = input("Select the .pcap file you want to use as input: ")
 
 # Create a nu .pcap that only contains EAPOL packets.
 output_file = "eapol.pcap"
@@ -16,4 +16,4 @@ subprocess.run(["hcxpcaptool", "-o", hccapx_file, output_file])
 results_file = "risultati.txt"
 subprocess.run(["hashcat", "-m", "2500", hccapx_file, "wordlist.txt", "-o", results_file])
 
-print("I risultati sono stati scritti su " + results_file)
+print("You will find your results in " + results_file)
