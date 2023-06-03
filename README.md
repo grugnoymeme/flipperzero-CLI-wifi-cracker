@@ -1,6 +1,6 @@
 # (flipperzero)-wifi-password-grabber
 
-To extract passwords you need from un-analyzed .pcap files, you need to follow these steps:
+To extract passwords from .pcap files extracted with your flipper zero (or others) without using wireshark and others analyzers. You'll need to follow these steps:
 
 ### Dependecies
 hcxpcaptool    
