@@ -3,32 +3,30 @@
 To extract passwords from .pcap files extracted with your flipper zero (or others) without using wireshark and others analyzers. You'll need to follow these steps:
 
 ### Dependecies
-hcxpcaptool    
+pyshark
+subprocess.run
+
 tshark     
 
-[tshark is used running the `tahark_alternative.py` if `hcxpcaptools` is resulting some kind of `ERROR`, cause `hcxpcaptool` may not working properly, cause has a little problem of mismatch between the release and the OS where it is installed]
-
+### Usage 
 ```
 pip install -r requirements.txt
-git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber
+git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber.git
 mv path/to/pcapfile.pcap flipperzero-wifi-password-grabber
-sudo nano wordlist.txt (and fill the file with all the possible passwords you want to try to find out the right ones)
-CTRL+o
-ENTER
-CTRL+x
-y
-ENTER
-
-OR
 mv path/to/yourwordlist.txt flipperzero-wifi-password-grabber
-
-sudo python3 wifi_pass_cracker.py
-
-OR
-sudo python3 tshark_alternative.py
+sudo python3 grabber.py
 ```
-now you will be asked your root password to give the root priveleges to the script, type it (even if you don't see nothing appear), then follow the instructions of the script (remember to put the .pcap file and the wordlist.txt file in the same directory of this script)
-
+If you don't have a wordlist, a pass-list or a dictionary, you can easyly create one doing this:
+```
+nano wordlist.txt (and fill the file with all the possible passwords you want to try to find out the right ones)
+^o (CTRL+o)
+ENTER
+^x (CTRL+x)
+y (yes)
+ENTER
+```
+### Tips
+*Remember to rename "wordlist.txt" the word list or the dictionary you are using to crack the password.  
 passwords will stored in a new file in the directory "risultati.txt"
 
 ### Disclaimer
