@@ -1,5 +1,5 @@
 import pyshark
-import subprocess
+import subprocess.run
 
 # Select the path (or better, the name in you are in the same directory of this script) of the .pcap file.
 input_file = input("Select the .pcap file you want to use as input: ")
