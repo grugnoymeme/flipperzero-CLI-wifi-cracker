@@ -1,2 +1,2 @@
 pyshark
-subprocess
+subprocess.run
