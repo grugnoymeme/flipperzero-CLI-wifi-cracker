@@ -2,7 +2,7 @@ import pyshark
 import subprocess
 
 # Select the input .pcap file
-input_file = input("Inserisci il nome del file .pcap di input: ")
+input_file = input("Insert input .pcap file's name: ")
 
 # Create a new file .pcap conteining only EAPOL handshakes
 output_file = "eapol.pcap"
@@ -17,4 +17,4 @@ results_file = "risultati.txt"
 subprocess.run(["hashcat", "-m", "22000", hccapx_file, "wordlist.txt", "-o", results_file])
 
 # Print a "Success" message
-print("I risultati sono stati scritti su " + results_file)
+print("You'll find results in " + results_file)
