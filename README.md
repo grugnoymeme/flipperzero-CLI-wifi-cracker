@@ -2,11 +2,13 @@
 
 To extract passwords from .pcap files extracted with your flipper zero (or others) without using wireshark and others analyzers. You'll need to follow these steps:
 
-### Dependecies
-pyshark
-subprocess.run
+### Dependecies     
+subprocess.run   
+`pip install subprocess.run`
 
-tshark     
+tshark *        
+hashcat *  
+` * Not really needed, cause ran throught subprocess.run `
 
 ### Usage 
 ```
