@@ -1,6 +1,8 @@
 # (flipperzero)-wifi-password-grabber
 
-To extract passwords from .pcap files extracted with your flipper zero (or others) without using wireshark and others analyzers. You'll need to follow these steps:
+To extract passwords from .pcap files extracted with your Flipper Zero (or other tools), this is an "all-in-one" tool. 
+You'll just need to follow these steps:
+`* at the end of the page you can find a tip to catch pcap file with your Flipper Zero`
 
 ### Dependecies     
 subprocess.run   
@@ -8,10 +10,9 @@ subprocess.run
 
 ### Necessary Tools
 python3   
-hcxtools / hcxpcapngtool    
-tshark *        
-hashcat *  
-` * Not really needed, cause ran throught subprocess.run `
+hcxpcapngtool [included in hcxtools]    
+tshark            
+hashcat   
 
 ### Usage 
 ```
@@ -65,5 +66,5 @@ Back
 ```
 
 ### Disclaimer
-
+This tool is not developed by the Flipper Zero staff.
 Please note that this payload is for educational purposes only and should not be used for illegal activities.
