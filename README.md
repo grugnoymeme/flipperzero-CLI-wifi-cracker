@@ -31,6 +31,36 @@ ENTER
 *Remember to rename "wordlist.txt" the word list or the dictionary you are using to crack the password.  
 passwords will stored in a new file in the directory "risultati.txt"
 
+### Extarcion of .pcap file.  
+You can automatize the extraction of .pcap files from flipper zero, using the @0xchocolate 's companion app, of the @justcallmekoko 's ESP32marauder.
+Once you've connected the devboard and opened the app,follow these instructions:    
+```
+Menu    
+Apps    
+GPIO    
+[ESP32] WiFi Marauder    
+Scripts
+[+]ADD SCRIPT
+< Enter a name for your script >
+Save
+< Select your script >
+[+]EDIT STAGES
+[+]ADD STAGE
+[+]Deauth
+< Select Deauth >
+Timeout 1
+Save
+Back
+[+]ADD STAGE
+[+]Sniff RAW
+< Select Sniff RAW >
+Timeout 15 (or 10, maybe also 5 is ok)
+Save
+Back
+Back
+[*]SAVE
+```
+
 ### Disclaimer
 
 Please note that this payload is for educational purposes only and should not be used for illegal activities.
