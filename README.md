@@ -1,7 +1,7 @@
 # (flipperzero)-wifi-password-grabber
 
 To extract passwords from .pcap files extracted with your Flipper Zero (or other tools), this is an "all-in-one" tool. 
-You'll just need to follow these steps:
+You'll just need to follow these steps:       
 `* at the end of the page you can find a tip to catch pcap file with your Flipper Zero`
 
 ### Dependecies     
@@ -32,8 +32,10 @@ y (yes)
 ENTER
 ```
 ### Tips
+```
 *Remember to rename "wordlist.txt" the word list or the dictionary you are using to crack the password.  
 passwords will stored in a new file in the directory "risultati.txt"
+```
 
 ### Extarcion of .pcap file.  
 You can automatize the extraction of .pcap files from flipper zero, using the @0xchocolate 's companion app, of the @justcallmekoko 's ESP32marauder.
