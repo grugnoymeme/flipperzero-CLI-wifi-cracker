@@ -6,6 +6,9 @@ To extract passwords from .pcap files extracted with your flipper zero (or other
 subprocess.run   
 `pip install subprocess.run`
 
+### Necessary Tools
+python3
+hcxtools / hcxpcapngtool
 tshark *        
 hashcat *  
 ` * Not really needed, cause ran throught subprocess.run `
