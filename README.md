@@ -32,10 +32,7 @@ y (yes)
 ENTER
 ```
 ### Tips
-```
-*Remember to rename "wordlist.txt" the word list or the dictionary you are using to crack the password.  
-passwords will stored in a new file in the directory "risultati.txt"
-```
+`*Remember to rename "wordlist.txt" the word list or the dictionary you are using."`
 
 ### Extarcion of .pcap file.  
 You can automatize the extraction of .pcap files from flipper zero, using the @0xchocolate 's companion app, of the @justcallmekoko 's ESP32marauder.
