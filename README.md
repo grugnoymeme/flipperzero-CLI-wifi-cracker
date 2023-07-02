@@ -7,8 +7,8 @@ subprocess.run
 `pip install subprocess.run`
 
 ### Necessary Tools
-python3
-hcxtools / hcxpcapngtool
+python3   
+hcxtools / hcxpcapngtool    
 tshark *        
 hashcat *  
 ` * Not really needed, cause ran throught subprocess.run `
