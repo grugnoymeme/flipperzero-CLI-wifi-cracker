@@ -4,22 +4,25 @@ To extract passwords from .pcap files extracted with your Flipper Zero (or other
 You'll just need to follow these steps:       
 `* at the end of the page you can find a tip to catch pcap file with your Flipper Zero`
 
+This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-grabber`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-grabber), i just wanted to make the process easyest as possible, and this is the result.
+
+---
 ### Dependecies     
 subprocess.run   
 `pip install subprocess.run`
 
 ### Necessary Tools
 python3   
-hcxpcapngtool [included in hcxtools]    
-tshark            
+hcxpcapngtool [included in hcxtools]                  
 hashcat   
 
+---
 ### Usage 
 ```
 pip install -r requirements.txt
 git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber.git
-mv path/to/pcapfile.pcap flipperzero-wifi-password-grabber
-mv path/to/yourwordlist.txt flipperzero-wifi-password-grabber
+mv path/to/pcapfile.pcap flipperzero-wifi-password-grabber (optional) (if not, specify the entire path)     
+mv path/to/yourwordlist.txt flipperzero-wifi-password-grabber (optional) (if not, specify the entire path)     
 sudo python3 grabber.py
 ```
 If you don't have a wordlist, a pass-list or a dictionary, you can easyly create one doing this:
@@ -31,9 +34,8 @@ ENTER
 y (yes)
 ENTER
 ```
-### Tips
-`* remember to rename "wordlist.txt" the word list or the dictionary you are using."`
 
+---
 ### Extarcion of .pcap file.  
 You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
 ```
