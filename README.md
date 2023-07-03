@@ -1,4 +1,4 @@
-# (flipperzero)-wifi-password-grabber
+# (flipperzero)-CLI-wifi-cracker
 
 To extract passwords from .pcap files extracted with your Flipper Zero (or other tools), this is an "all-in-one" tool. 
 You'll just need to follow these steps:       
