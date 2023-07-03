@@ -9,9 +9,9 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 ---
 ### Dependecies     
 subprocess.run   
-`pip install subprocess.run`
+os
 
-### Necessary Tools
+### Used Tools
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
