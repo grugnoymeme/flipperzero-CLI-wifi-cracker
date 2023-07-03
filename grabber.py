@@ -1,3 +1,4 @@
+import os
 import subprocess
 
 # ASCII Art
@@ -29,3 +30,6 @@ wordlist_file = input("Now insert wordlist file's NAME or PATH: ")
 
 # Import the .hc22000 file into hashcat, find out the password, and show it
 subprocess.run(["hashcat", "-m", "22000", hc22000_file, wordlist_file, "--show"])
+
+# Delete the hc22000 file
+os.remove(hc22000_file)
