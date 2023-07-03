@@ -35,35 +35,35 @@ ENTER
 `* remember to rename "wordlist.txt" the word list or the dictionary you are using."`
 
 ### Extarcion of .pcap file.  
-You can automatize the extraction of .pcap files from flipper zero, using the @0xchocolate 's companion app, of the @justcallmekoko 's ESP32marauder.
-Once you've connected the devboard and opened the app,follow these instructions:    
+You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
 ```
-Menu    
-Apps    
-GPIO    
-[ESP32] WiFi Marauder    
-Scripts
-[+]ADD SCRIPT
-< Enter a name for your script >
-Save
-< Select your script >
-[+]EDIT STAGES
-[+]ADD STAGE
-[+]Deauth
-< Select Deauth >
-Timeout 1
-Save
-Back
-[+]ADD STAGE
-[+]Sniff RAW
-< Select Sniff RAW >
-Timeout 15 (or 10, maybe also 5 is ok)
-Save
-Back
-Back
+Menu       
+Apps       
+GPIO        
+[ESP32] WiFi Marauder       
+Scripts   
+[+]ADD SCRIPT    
+< Enter a name for your script >   
+Save    
+< Select your script >    
+[+]EDIT STAGES    
+[+]ADD STAGE    
+[+]Deauth     
+< Select Deauth >     
+Timeout 1    
+Save    
+Back    
+[+]ADD STAGE    
+[+]Sniff RAW     
+< Select Sniff RAW >    
+Timeout 15 (or 10, maybe also 5 is ok)     
+Save    
+Back     
+Back     
 [*]SAVE
 ```
-
-### Disclaimer
-This tool is not developed by the Flipper Zero staff.
-Please note that this payload is for educational purposes only and should not be used for illegal activities.
+  
+---
+# Disclaimer
+This tool is not developed by the Flipper Zero staff.    
+Please note that the code you find on this repo is only proposed for educational purposes and should NEVER be used for illegal activities.
