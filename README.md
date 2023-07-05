@@ -41,7 +41,7 @@ You can automatize the extraction of .pcap files from flipper zero, using the [@
 ```
 Menu       
 Apps       
-GPIO        
+WIFI / GPIO / GPIO EXTRA        
 [ESP32] WiFi Marauder       
 Scripts   
 [+]ADD SCRIPT    
