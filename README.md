@@ -44,7 +44,8 @@ python3 dictionary_attack.py
 ```
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
 cd flipperzero-CLI-wifi-cracker
-cd bruteforce_attack 
+cd bruteforce_attack   
+// set the timer and the charset
 python3 bruteforce_attack.py
 ```
 * If you don't have a wordlist (password-list or a dictionary) to run the dictionary attack mode, you can easyly create one, executing these commands:
