@@ -26,13 +26,15 @@ print("")
 print("")
 
 # Select input .pcap file
-input_file = ""
-while True:
-    input_file = input("Insert input .pcap file's NAME or PATH: ")
-    if input_file.endswith((".pcap", ".cap", ".pcapng")) and os.path.isfile(input_file):
-        break
-    else:
-        print("Invalid input file. Please make sure the file exists and has a valid format.")
+def Selectfile():
+   
+   input_file = ""
+   while True:
+       input_file = input("Insert input .pcap file's NAME or PATH: ")
+       if input_file.endswith((".pcap", ".cap", ".pcapng")) and os.path.isfile(input_file):
+           break
+       else:
+           print("Invalid input file. Please make sure the file exists and has a valid format.")
 
 # Convert the .pcap file into .hc22000
 hc22000_file = "wpa_crack.hc22000"
