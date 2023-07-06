@@ -2,7 +2,6 @@
 
 To extract passwords from .pcap files extracted with your Flipper Zero (or other tools), this is an "all-in-one" tool. 
 You'll just need to follow these steps:       
-`* at the end of the page you can find a tip to catch pcap file with your Flipper Zero`
 
 This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-cracker`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-cracker), i just wanted to make the process easyest as possible, and this is the result.
 
