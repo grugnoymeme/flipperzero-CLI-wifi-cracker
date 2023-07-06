@@ -6,20 +6,14 @@ You'll just need to follow these steps:
 
 This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-cracker`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-cracker), i just wanted to make the process easyest as possible, and this is the result.
 
----
-## Dependecies     
+---    
+|***Dependecies***|***pip install***|
+|:-----|:-----------------------------------------------------|
+|<ins>**for dictionary attack:**</ins>|os, subprocess.run |
+|<ins>**for bruteforce attack:**</ins>|os, subprocess.run, string, itertools, signal|
 
-### for dictionary attack:
-os      
-subprocess.run        
-### for bruteforce attack:
-os    
-subprocess.run      
-string     
-itertools      
-signal
 
-## Used Tools (for both):
+## Needed Tools (for both versions):
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
@@ -37,7 +31,6 @@ mv path/to/pcapfile.pcap path/to/flipperzero-CLI-wifi-cracker/dictionary_attack 
 mv path/to/yourwordlist.txt path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
 python3 dictionary_attack.py
 ```
-
 ### for bruteforce attack:
 ```
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
@@ -45,8 +38,7 @@ cd flipperzero-CLI-wifi-cracker
 cd bruteforce_attack 
 python3 bruteforce_attack.py
 ```
-
-If you don't have a wordlist (password-list or a dictionary) to run the dictionary attack mode, you can easyly create one, executing these commands:
+* If you don't have a wordlist (password-list or a dictionary) to run the dictionary attack mode, you can easyly create one, executing these commands:
 ```
 cd path/to/flipperzero-CLI-wifi-cracker
 cd dictionary_attack (optional) (if you not create it, specify the entire path when you'll be asked)
