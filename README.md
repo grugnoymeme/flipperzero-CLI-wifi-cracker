@@ -21,7 +21,8 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 |<ins>**for dictionary attack:**</ins>|os, subprocess.run |
 |<ins>**for bruteforce attack:**</ins>|os, subprocess.run, string, itertools, signal|
 
-## Needed-Tools (for both versions):
+## Needed-Tools:    
+(for both versions)
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
@@ -60,7 +61,8 @@ ENTER
 ```
 
 ---
-## PCAP-Extarction (with Flipper Zero & ESP32 Marauder)      
+## PCAP-Extarction:    
+(with Flipper Zero & ESP32 Marauder)      
 * You can simply upload the `EAPOLwifiSniffer.json` script into `/ext/apps_data/marauder/scripts` directory in your Flipper Zero and then you can directly run it through the [ESP32] Marauder application, under the Menu's voice "Scripts".
 
 In alternative, if you want to do it yourself, because you need to modify the duration of the sniff, or the name of the script, or maybe adding some more stages or simply because you want to do it ALL by yourself: 
