@@ -7,9 +7,17 @@ You'll just need to follow these steps:
 This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-cracker`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-cracker), i just wanted to make the process easyest as possible, and this is the result.
 
 ---
-### Dependecies     
-subprocess.run   
+## Dependecies     
+
+### for dictionary attack:
+os      
+subprocess.run        
+### for bruteforce attack:
 os
+subprocess.run
+string
+itertools
+signal
 
 ### Used Tools
 python3   
@@ -17,7 +25,7 @@ hcxpcapngtool [included in hcxtools]
 hashcat   
 
 ---
-### Usage 
+## Usage 
 ```
 pip install -r requirements.txt
 git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber.git
@@ -36,7 +44,7 @@ ENTER
 ```
 
 ---
-### Extarcion of .pcap file.  
+## Extarcion of .pcap file.  
 You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
 ```
 Menu       
