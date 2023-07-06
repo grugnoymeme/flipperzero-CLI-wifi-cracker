@@ -92,7 +92,7 @@ Back
 Then go to the "apps_data" folder, from the root of your Flipper Zero's FS, "marauder", and finally "pcaps".
 There you'll find the file you will need to run properly this tool.
 
-** In order to correctly save the "pcaps" files on the SD card of your Flipper Zero, you must have flashed the correct version of the "Marauder" firmware (esp32_marauder_vX_X_X_xxxxxxxx_flipper_sd_serial.bin), on your "Devboard" (whether official or handmade); and that you have set the saving of the pcaps on the Flipper Zero external memory (you can set this when you first start the [ESP32] Marauder app, or later, from the app's menu). 
+* In order to correctly save the "pcaps" files on the SD card of your Flipper Zero, you must have flashed the correct version of the "Marauder" firmware (esp32_marauder_vX_X_X_xxxxxxxx_flipper_sd_serial.bin), on your "Devboard" (whether official or handmade); and that you have set the saving of the pcaps on the Flipper Zero external memory (you can set this when you first start the [ESP32] Marauder app, or later, from the app's menu). 
   
 ---
 ## Disclaimer
