@@ -47,7 +47,7 @@ charset = string.printable  # Define the character set to be used
 def timeout_handler(signum, frame):
     raise TimeoutError("Timeout expired. Password not found.")
 
-# Set the timeout to 120" = 2' (2 minutes)
+# Set the timeout to 120" = 2' (2 minutes is a very low time, and this is just for example) 
 timeout = 120
 
 # Set the manager of signals for SIGALRM (the alarm)
