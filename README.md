@@ -60,7 +60,7 @@ ENTER
 ```
 
 ---
-## PCAP-Extarcion (with Flipper Zero & ESP32 Marauder)      
+## PCAP-Extarction (with Flipper Zero & ESP32 Marauder)      
 * You can simply upload the `EAPOLwifiSniffer.json` script into `/ext/apps_data/marauder/scripts` directory in your Flipper Zero and then you can directly run it through the [ESP32] Marauder application, under the Menu's voice "Scripts".
 
 In alternative, if you want to do it yourself, because you need to modify the duration of the sniff, or the name of the script, or maybe adding some more stages or simply because you want to do it ALL by yourself: 
