@@ -3,6 +3,7 @@ import subprocess
 import string
 import itertools
 import signal
+from bruteforce_attack.py import *
 
 # ASCII Art
 ascii_art = """
@@ -27,14 +28,7 @@ print("")
 print("")
 
 # Select input .pcap file
-input_file = ""
-while True:
-    input_file = input("Insert input .pcap file's NAME or PATH: ")
-    if input_file.endswith((".pcap", ".cap", ".pcapng")) and os.path.isfile(input_file):
-        break
-    else:
-        print("Invalid input file. Please make sure the file exists and has a valid format.")
-
+Selectfile()
 # Convert the .pcap file into .hc22000
 hc22000_file = "wpa_crack.hc22000"
 subprocess.run(["hcxpcapngtool", "-o", hc22000_file, input_file])
