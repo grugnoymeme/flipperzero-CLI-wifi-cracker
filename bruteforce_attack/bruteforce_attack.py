@@ -43,16 +43,19 @@ print("  -----------------------------------------------------------------------
 
 # Brute force attack
 charset = string.printable  # Define the character set to be used (e.g. "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRSTUVWXYZ"), string.printable contains all kind of printable characters
-password_length = 10  # Define the length of the password to be brute forced
 
-for i in range(password_length):
-    for password in itertools.product(charset, repeat=i+1):
+password_found = False
+password_length = 1
+
+while not password_found:
+    for password in itertools.product(charset, repeat=password_length):
         password = ''.join(password)
-        # Run hashcat with the brute-forced password
         result = subprocess.run(["hashcat", "-m", "22000", hc22000_file, password], capture_output=True)
         if "Cracked" in result.stdout.decode():
             print(f"Password found: {password}")
+            password_found = True
             break
+    password_length += 1
 
 # Delete the hc22000 file
 os.remove(hc22000_file)
