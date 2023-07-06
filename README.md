@@ -31,7 +31,8 @@ mv path/to/pcapfile.pcap path/to/flipperzero-CLI-wifi-cracker/dictionary_attack 
 mv path/to/yourwordlist.txt path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
 python3 dictionary_attack.py
 ```
-### for bruteforce attack:
+### for bruteforce attack:    
+* There are two different brute force script. One that run till the password is found, and the other in which you can set a timer that stop running the script if the password is not found in the time that you had set.
 ```
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
 cd flipperzero-CLI-wifi-cracker
