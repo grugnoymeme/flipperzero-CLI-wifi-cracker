@@ -15,7 +15,7 @@ ascii_art = """
 """
 
 print(ascii_art)
-print("          WiFi-Grabber Tool • © 2023 • 47lecoste • https://github.com/grugnoymeme")
+print("          WiFi-Grabber Tool • © 2023 • 47lecoste • SITO MEME")
 print("")
 print("")
 print("  _____________________________________________________________________________________________\n")
@@ -42,33 +42,30 @@ subprocess.run(["hcxpcapngtool", "-o", hc22000_file, input_file])
 print("  _____________________________________________________________________________________________\n")
 print("  ---------------------------------------------------------------------------------------------\n")
 
-# Brute force attack
 charset = string.printable  # Define the character set to be used
-password_length = 10  # Define the length of the password to be brute forced
 
-# Function to manage the timeout
 def timeout_handler(signum, frame):
     raise TimeoutError("Timeout expired. Password not found.")
 
-# set the timeout to 600" = 10' (10 minutes)
-timeout = 600
+# Set the timeout to 120" = 2' (2 minutes)
+timeout = 120
 
-# SEt the manager of signals for SIGALRM (the allarm)
+# Set the manager of signals for SIGALRM (the alarm)
 signal.signal(signal.SIGALRM, timeout_handler)
 signal.alarm(timeout)
 
 # Brute force attack
 try:
-    for i in range(password_length):
-        for password in itertools.product(charset, repeat=i+1):
+    password_length = 1
+    while True:
+        for password in itertools.product(charset, repeat=password_length):
             password = ''.join(password)
-            # Run hashcat with the brute-forced password
             result = subprocess.run(["hashcat", "-m", "22000", hc22000_file, password], capture_output=True)
             if "Cracked" in result.stdout.decode():
                 print(f"Password found: {password}")
                 raise SystemExit(0)  # Terminate the script if the password is found
+        password_length += 1
 except TimeoutError as e:
     print(str(e))
 finally:
-    # Cance the alarm of the timeout
     signal.alarm(0)
