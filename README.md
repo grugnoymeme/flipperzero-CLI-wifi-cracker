@@ -19,20 +19,33 @@ string
 itertools      
 signal
 
-### Used Tools
+## Used Tools (for both):
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
 
 ---
-## Usage 
+## Usage
+
+### for dictionary attack:
 ```
+git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
+cd flipperzero-CLI-wifi-cracker
+cd dictionary_attack
 pip install -r requirements.txt
-git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber.git
 mv path/to/pcapfile.pcap flipperzero-wifi-password-grabber (optional) (if not, specify the entire path)     
 mv path/to/yourwordlist.txt flipperzero-wifi-password-grabber (optional) (if not, specify the entire path)     
 sudo python3 grabber.py
 ```
+
+### for dictionary attack:
+```
+git clone https://github.com/grugnoymeme/flipperzero-wifi-password-grabber.git
+mv path/to/pcapfile.pcap path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
+mv path/to/yourwordlist.txt path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked) 
+sudo python3 grabber.py
+```
+
 If you don't have a wordlist, a pass-list or a dictionary, you can easyly create one doing this:
 ```
 nano wordlist.txt (and fill the file with all the possible passwords you want to try to find out the right ones)
@@ -44,7 +57,7 @@ ENTER
 ```
 
 ---
-## Extarcion of .pcap file.  
+## Extarcion of .pcap file  
 You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
 ```
 Menu       
@@ -74,6 +87,6 @@ Back
 ```
   
 ---
-# Disclaimer
+## Disclaimer
 This tool is not developed by the Flipper Zero staff.    
 Please note that the code you find on this repo is only proposed for educational purposes and should NEVER be used for illegal activities.
