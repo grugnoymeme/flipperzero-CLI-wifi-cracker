@@ -52,8 +52,13 @@ ENTER
 ```
 
 ---
-## Extarcion of .pcap file with Flipper Zero & ESP32 Marauder  
-You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
+## Extarcion of .pcap file with Flipper Zero & ESP32 Marauder      
+* You can simply upload the `EAPOLwifiSniffer.json` script into `/ext/apps_data/marauder/scripts` directory in your Flipper Zero and then you can directly run it through the [ESP32] Marauder application, under the Menu's voice "Scripts".
+
+In alternative, if you want to do it yourself, because you need to modify the duration of the sniff, or the name of the script, or maybe adding some more stages or simply because you want to do it ALL by yourself: 
+* You can automatize the extraction of .pcap files from flipper zero, using the [@0xchocolate](https://github.com/0xchocolate) 's companion app, of the [@JustCallMeKoKo's](https://github.com/justcallmekoko) ESP32marauder. Once you've connected the devboard and opened the app,follow these instructions:
+
+<ins>**ATTENTION:**</ins> *do not modify the duration of the deauth, because if you set it for more then one second, the risk is that you will not catch EAPOL packets and then, you woun't be able to extract WPA/WPA2 handshakes to analyze, and extract the password.*   
 ```
 Switch on the Flipper Zero
 Press OK to enter the Menu       
@@ -69,7 +74,7 @@ Save
 [+]ADD STAGE    
 [+]Deauth     
 < Select Deauth >     
-Timeout 1    
+Timeout 1      
 Save    
 Back    
 [+]ADD STAGE    
