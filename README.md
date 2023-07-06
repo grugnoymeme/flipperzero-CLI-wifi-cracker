@@ -13,10 +13,10 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 os      
 subprocess.run        
 ### for bruteforce attack:
-os
-subprocess.run
-string
-itertools
+os    
+subprocess.run      
+string     
+itertools      
 signal
 
 ### Used Tools
