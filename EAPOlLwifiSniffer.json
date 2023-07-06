@@ -1,6 +1,6 @@
 {
 	"meta":	{
-		"description":	"Flipper Zero EAPOL Packets Sniffer",
+		"description":	"EAPOL Packets Sniffer",
 		"repeat":	1.0000000000000000
 	},
 	"stages":	[{
