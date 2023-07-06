@@ -10,7 +10,7 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 * [Usage](#Usage)
   - [For dictionary attack](#for-dictionary-attack)
   - [For bruteforce attack](#for-bruteforce-attack)
-* [PCAP-Extraction](#PCAP-Extraction)
+* [PCAP Extraction](#PCAP-Extraction)
 * [Disclaimer](#Disclaimer)
 
 ---  
