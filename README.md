@@ -1,4 +1,4 @@
-# (flipperzero)-CLI-wifi-cracker
+# FlipperZero CLI WiFi Cracker
 
 To extract passwords from .pcap files extracted with your Flipper Zero (or other tools), this is an "all-in-one" tool. 
 You'll just need to follow these steps:       
@@ -6,14 +6,22 @@ You'll just need to follow these steps:
 
 This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-cracker`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-cracker), i just wanted to make the process easyest as possible, and this is the result.
 
----    
-|***Dependecies***|***pip install***|
+* [Dependencies](#Dependencies)
+* [Needed Tools](#Needed-Tools)
+* [Usage](#Usage)
+  - [For dictionary attack](#for-dictionary-attack)
+  - [For bruteforce attack](#for-bruteforce-attack)
+* [PCAP-Extraction](#PCAP-Extraction)
+* [Disclaimer](#Disclaimer)
+
+---  
+## Dependencies
+|***Attack***|***pip install***|
 |:-----|:-----------------------------------------------------|
 |<ins>**for dictionary attack:**</ins>|os, subprocess.run |
 |<ins>**for bruteforce attack:**</ins>|os, subprocess.run, string, itertools, signal|
 
-
-## Needed Tools (for both versions):
+## Needed-Tools (for both versions):
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
@@ -21,7 +29,7 @@ hashcat
 ---
 ## Usage
 
-### for dictionary attack:
+### for-dictionary-attack:
 ```
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
 cd flipperzero-CLI-wifi-cracker
@@ -31,7 +39,7 @@ mv path/to/pcapfile.pcap path/to/flipperzero-CLI-wifi-cracker/dictionary_attack 
 mv path/to/yourwordlist.txt path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
 python3 dictionary_attack.py
 ```
-### for bruteforce attack:    
+### for-bruteforce-attack:    
 * There are two different brute force script. One that run till the password is found, and the other in which you can set a timer that stop running the script if the password is not found in the time that you had set.
 ```
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
@@ -52,7 +60,7 @@ ENTER
 ```
 
 ---
-## Extarcion of .pcap file with Flipper Zero & ESP32 Marauder      
+## PCAP-Extarcion (with Flipper Zero & ESP32 Marauder)      
 * You can simply upload the `EAPOLwifiSniffer.json` script into `/ext/apps_data/marauder/scripts` directory in your Flipper Zero and then you can directly run it through the [ESP32] Marauder application, under the Menu's voice "Scripts".
 
 In alternative, if you want to do it yourself, because you need to modify the duration of the sniff, or the name of the script, or maybe adding some more stages or simply because you want to do it ALL by yourself: 
