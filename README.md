@@ -34,7 +34,6 @@ hashcat
 git clone https://github.com/grugnoymeme/flipperzero-CLI-wifi-cracker.git
 cd flipperzero-CLI-wifi-cracker
 cd dictionary_attack
-pip install -r requirements.txt
 mv path/to/pcapfile.pcap path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
 mv path/to/yourwordlist.txt path/to/flipperzero-CLI-wifi-cracker/dictionary_attack (optional) (if you not move it, specify the entire path when you'll be asked)    
 python3 dictionary_attack.py
