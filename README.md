@@ -15,7 +15,7 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 
 ---  
 ## Dependencies
-|***Attack***|***pip install***|
+|***Attack***|***in Pip by drfault***|
 |:-----|:-----------------------------------------------------|
 |<ins>**for dictionary attack:**</ins>|os, subprocess.run |
 |<ins>**for bruteforce attack:**</ins>|os, subprocess.run, string, itertools, signal|
