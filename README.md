@@ -5,7 +5,7 @@ You'll just need to follow these steps:
 
 This is the CLI (Command Line Interface) version of my other script and repo [`flipperzero-GUI-wifi-cracker`](https://github.com/grugnoymeme/flipperzero-GUI-wifi-cracker), i just wanted to make the process easyest as possible, and this is the result.
 
-* [Dependencies](#Dependencies)
+
 * [Needed Tools](#Needed-Tools)
 * [Usage](#Usage)
   - [For dictionary attack](#for-dictionary-attack)
@@ -13,12 +13,7 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 * [PCAP Extraction](#PCAP-Extraction)
 * [Disclaimer](#Disclaimer)
 
----  
-## Dependencies
-|***Attack***|***in Pip by drfault***|
-|:-----|:-----------------------------------------------------|
-|<ins>**for dictionary attack:**</ins>|os, subprocess.run |
-|<ins>**for bruteforce attack:**</ins>|os, subprocess.run, string, itertools, signal|
+
 
 ## Needed-Tools        
 (for both versions)         
