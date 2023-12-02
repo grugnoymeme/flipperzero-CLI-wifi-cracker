@@ -15,8 +15,7 @@ This is the CLI (Command Line Interface) version of my other script and repo [`f
 
 
 
-## Needed-Tools        
-(for both versions)         
+## Needed-Tools              
 python3   
 hcxpcapngtool [included in hcxtools]                  
 hashcat   
