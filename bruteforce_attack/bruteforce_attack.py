@@ -34,7 +34,6 @@ while True:
     else:
         print("Invalid input file. Please make sure the file exists and has a valid format.")
 
-# Convert the .pcap file into .hc22000
 hc22000_file = "wpa_crack.hc22000"
 subprocess.run(["hcxpcapngtool", "-o", hc22000_file, input_file])
 
