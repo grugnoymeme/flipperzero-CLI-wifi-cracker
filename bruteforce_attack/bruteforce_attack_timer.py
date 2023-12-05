@@ -35,7 +35,6 @@ while True:
     else:
         print("Invalid input file. Please make sure the file exists and has a valid format.")
 
-# Convert the .pcap file into .hc22000
 hc22000_file = "wpa_crack.hc22000"
 subprocess.run(["hcxpcapngtool", "-o", hc22000_file, input_file])
 
@@ -63,7 +62,7 @@ try:
             result = subprocess.run(["hashcat", "-m", "22000", hc22000_file, password], capture_output=True)
             if "Cracked" in result.stdout.decode():
                 print(f"Password found: {password}")
-                raise SystemExit(0)  # Terminate the script if the password is found
+                raise SystemExit(0)
         password_length += 1
 except TimeoutError as e:
     print(str(e))
